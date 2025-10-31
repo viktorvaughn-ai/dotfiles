@@ -1,0 +1,95 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20251028_003854
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: gcc.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for gcc
+51    |Info:    [ResourceManager] Initializing HID interfaces: Success
+51    |Info:    ------------------------------------------------------
+51    |Info:    |               Start device detection               |
+51    |Info:    ------------------------------------------------------
+58    |Info:    ------------------------------------------------------
+58    |Info:    |             Detecting I2C interfaces               |
+58    |Info:    ------------------------------------------------------
+58    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:2702 Subsystem: 1458:4140
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 1002:13C0 Subsystem: 1458:D000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ITE8800:00 Device 0000:0000 Subsystem: 0000:0000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 1002:13C0 Subsystem: 1458:D000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:2702 Subsystem: 1458:4140
+59    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:2702 Subsystem: 1458:4140
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 1002:13C0 Subsystem: 1458:D000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:2702 Subsystem: 1458:4140
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ITE8800:01 Device 0000:0000 Subsystem: 0000:0000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 1002:13C0 Subsystem: 1458:D000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:2702 Subsystem: 1458:4140
+59    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 0000:0000 Subsystem: 0000:0000
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:2702 Subsystem: 1458:4140
+59    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+59    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+59    |Info:    ------------------------------------------------------
+59    |Info:    |               Detecting I2C devices                |
+59    |Info:    ------------------------------------------------------
+83    |Info:    ------------------------------------------------------
+83    |Info:    |            Detecting I2C DIMM modules              |
+83    |Info:    ------------------------------------------------------
+83    |Info:    ------------------------------------------------------
+83    |Info:    |               Detecting I2C PCI devices            |
+83    |Info:    ------------------------------------------------------
+180   |Info:    [Gigabyte GeForce RTX 4080 SUPER GAMING OC] Registering RGB controller
+272   |Info:    ------------------------------------------------------
+272   |Info:    |               Detecting HID devices                |
+272   |Info:    ------------------------------------------------------
+442   |Info:    [X870 GAMING X WIFI7] Registering RGB controller
+482   |Info:    [KLM] Created new Tenkeyless ANSI QWERTY with 6 rows and 17 columns containing 87 keys
+482   |Info:    [Razer Blackwidow V3 TKL] Registering RGB controller
+482   |Info:    ------------------------------------------------------
+482   |Info:    |            Detecting libusb HID devices            |
+482   |Info:    ------------------------------------------------------
+593   |Info:    ------------------------------------------------------
+593   |Info:    |              Detecting other devices               |
+593   |Info:    ------------------------------------------------------
+605   |Info:    [ResourceManager] Calling Post-detection callbacks
+605   |Info:    ------------------------------------------------------
+605   |Info:    |                Detection completed                 |
+605   |Info:    ------------------------------------------------------
+605   |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
+3349  |Info:    [ProfileManager] Found file: gcc.orp attempting to validate header
+3349  |Info:    [ProfileManager] Valid v5 profile found for gcc
+5109  |Info:    [ProfileManager] Found file: gcc.orp attempting to validate header
+5109  |Info:    [ProfileManager] Valid v5 profile found for gcc
+13109 |Info:    [ProfileManager] Found file: gcc.orp attempting to validate header
+13109 |Info:    [ProfileManager] Valid v5 profile found for gcc
+13109 |Info:    [ProfileManager] Found file: gcc1.orp attempting to validate header
+13109 |Info:    [ProfileManager] Valid v5 profile found for gcc1
+14722 |Info:    [ProfileManager] Profile loading: Succeeded for Gigabyte GeForce RTX 4080 SUPER GAMING OC @ I2C: /dev/i2c-2, address 0x72
+14722 |Info:    [ProfileManager] Profile loading: Succeeded for X870 GAMING X WIFI7 @ HID: /dev/hidraw4
+14722 |Info:    [ProfileManager] Profile loading: Succeeded for Razer Blackwidow V3 TKL @ HID: /dev/hidraw7
+16515 |Info:    [ProfileManager] Profile loading: Succeeded for Gigabyte GeForce RTX 4080 SUPER GAMING OC @ I2C: /dev/i2c-2, address 0x72
+16515 |Info:    [ProfileManager] Profile loading: Succeeded for X870 GAMING X WIFI7 @ HID: /dev/hidraw4
+16515 |Info:    [ProfileManager] Profile loading: Succeeded for Razer Blackwidow V3 TKL @ HID: /dev/hidraw7
+22516 |Info:    [ProfileManager] Profile loading: Succeeded for Gigabyte GeForce RTX 4080 SUPER GAMING OC @ I2C: /dev/i2c-2, address 0x72
+22516 |Info:    [ProfileManager] Profile loading: Succeeded for X870 GAMING X WIFI7 @ HID: /dev/hidraw4
+22516 |Info:    [ProfileManager] Profile loading: Succeeded for Razer Blackwidow V3 TKL @ HID: /dev/hidraw7
+27147 |Info:    [ProfileManager] Found file: gcc1.orp attempting to validate header
+27147 |Info:    [ProfileManager] Valid v5 profile found for gcc1
+32462 |Info:    [ProfileManager] Profile loading: Succeeded for Gigabyte GeForce RTX 4080 SUPER GAMING OC @ I2C: /dev/i2c-2, address 0x72
+32462 |Info:    [ProfileManager] Profile loading: Succeeded for X870 GAMING X WIFI7 @ HID: /dev/hidraw4
+32462 |Info:    [ProfileManager] Profile loading: Succeeded for Razer Blackwidow V3 TKL @ HID: /dev/hidraw7
+51030 |Info:    [ProfileManager] Found file: gcc1.orp attempting to validate header
+51030 |Info:    [ProfileManager] Valid v5 profile found for gcc1
+51409 |Info:    [ProfileManager] Found file: gcc1.orp attempting to validate header
+51409 |Info:    [ProfileManager] Valid v5 profile found for gcc1
+51611 |Info:    [ProfileManager] Found file: gcc1.orp attempting to validate header
+51611 |Info:    [ProfileManager] Valid v5 profile found for gcc1
+51792 |Info:    [ProfileManager] Found file: gcc1.orp attempting to validate header
+51792 |Info:    [ProfileManager] Valid v5 profile found for gcc1
+52073 |Info:    [ProfileManager] Found file: gcc1.orp attempting to validate header
+52073 |Info:    [ProfileManager] Valid v5 profile found for gcc1
+52479 |Info:    [ProfileManager] Found file: gcc1.orp attempting to validate header
+52479 |Info:    [ProfileManager] Valid v5 profile found for gcc1

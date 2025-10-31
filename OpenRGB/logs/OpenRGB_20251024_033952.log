@@ -1,0 +1,61 @@
+    OpenRGB v0.9+ (1.0rc2)
+    Commit:  from 
+    Launched: 20251024_033952
+====================================================================================================
+
+0     |Info:    [ProfileManager] Found file: gcc.orp attempting to validate header
+0     |Info:    [ProfileManager] Valid v5 profile found for gcc
+51    |Info:    [ResourceManager] Initializing HID interfaces: Success
+51    |Info:    ------------------------------------------------------
+51    |Info:    |               Start device detection               |
+51    |Info:    ------------------------------------------------------
+57    |Info:    ------------------------------------------------------
+57    |Info:    |             Detecting I2C interfaces               |
+57    |Info:    ------------------------------------------------------
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-3 Device 10DE:2702 Subsystem: 1458:4140
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-10 Device 1002:13C0 Subsystem: 1458:D000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-1 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ITE8800:00 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-8 Device 1002:13C0 Subsystem: 1458:D000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-6 Device 10DE:2702 Subsystem: 1458:4140
+57    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-13 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-4 Device 10DE:2702 Subsystem: 1458:4140
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-11 Device 1002:13C0 Subsystem: 1458:D000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-2 Device 10DE:2702 Subsystem: 1458:4140
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-0 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-ITE8800:01 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-9 Device 1002:13C0 Subsystem: 1458:D000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-7 Device 10DE:2702 Subsystem: 1458:4140
+57    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-14 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-5 Device 10DE:2702 Subsystem: 1458:4140
+57    |Warning: [i2c_smbus_linux] Failed to read i2c device PCI device ID
+57    |Info:    [ResourceManager] Registering I2C interface: /dev/i2c-12 Device 0000:0000 Subsystem: 0000:0000
+57    |Info:    ------------------------------------------------------
+57    |Info:    |               Detecting I2C devices                |
+57    |Info:    ------------------------------------------------------
+81    |Info:    ------------------------------------------------------
+81    |Info:    |            Detecting I2C DIMM modules              |
+81    |Info:    ------------------------------------------------------
+81    |Info:    ------------------------------------------------------
+81    |Info:    |               Detecting I2C PCI devices            |
+81    |Info:    ------------------------------------------------------
+184   |Info:    [Gigabyte GeForce RTX 4080 SUPER GAMING OC] Registering RGB controller
+280   |Info:    ------------------------------------------------------
+280   |Info:    |               Detecting HID devices                |
+280   |Info:    ------------------------------------------------------
+450   |Info:    [X870 GAMING X WIFI7] Registering RGB controller
+490   |Info:    [KLM] Created new Tenkeyless ANSI QWERTY with 6 rows and 17 columns containing 87 keys
+490   |Info:    [Razer Blackwidow V3 TKL] Registering RGB controller
+490   |Info:    ------------------------------------------------------
+490   |Info:    |            Detecting libusb HID devices            |
+490   |Info:    ------------------------------------------------------
+607   |Info:    ------------------------------------------------------
+607   |Info:    |              Detecting other devices               |
+607   |Info:    ------------------------------------------------------
+618   |Info:    [ResourceManager] Calling Post-detection callbacks
+618   |Info:    ------------------------------------------------------
+618   |Info:    |                Detection completed                 |
+618   |Info:    ------------------------------------------------------
+618   |Dialog:  <h2>Some internal devices may not be detected:</h2><p>One or more I2C or SMBus interfaces failed to initialize.</p><p><b>RGB DRAM modules, some motherboards' onboard RGB lighting, and RGB Graphics Cards, will not be available in OpenRGB</b> without I2C or SMBus.</p><h4>How to fix this:</h4><p>On Linux, this is usually because the i2c-dev module is not loaded.</p><p>You must load the i2c-dev module along with the correct i2c driver for your motherboard. This is usually i2c-piix4 for AMD systems and i2c-i801 for Intel systems.</p><p>See <a href='https://help.openrgb.org/'>help.openrgb.org</a> for additional troubleshooting steps if you keep seeing this message.<br></p><h3>If you are not using internal RGB on a desktop this message is not important to you.</h3>
